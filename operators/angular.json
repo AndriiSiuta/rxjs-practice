@@ -5,10 +5,14 @@
   "projects": {
     "operators": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "rx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -94,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "37ec06dd-6b80-4109-8327-70c858ce7109"
   }
 }
