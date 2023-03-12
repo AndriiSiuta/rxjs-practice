@@ -8,6 +8,9 @@ const routes: Routes = [{
 }, {
   path: 'combination',
   loadChildren: () => import('./combination/combination.module').then(m => m.CombinationModule)
+}, {
+  path: 'conditional',
+  loadChildren: () => import('./conditional/conditional.module').then(m => m.ConditionalModule)
 }];
 
 @NgModule({
