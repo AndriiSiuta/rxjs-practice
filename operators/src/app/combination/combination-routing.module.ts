@@ -7,6 +7,13 @@ import {ConcatComponent} from './concat/concat.component';
 import {ConcatAllComponent} from './concat-all/concat-all.component';
 import {EndWithComponent} from './end-with/end-with.component';
 import {ForkJoinComponent} from './fork-join/fork-join.component';
+import {MergeComponent} from './merge/merge.component';
+import {MergeAllComponent} from './merge-all/merge-all.component';
+import {PairwiseComponent} from './pairwise/pairwise.component';
+import {RaceComponent} from './race/race.component';
+import {StartWithComponent} from './start-with/start-with.component';
+import {WithLatestFromComponent} from './with-latest-from/with-latest-from.component';
+import {ZipComponent} from './zip/zip.component';
 
 const routes: Routes = [{
   path: '',
@@ -29,6 +36,27 @@ const routes: Routes = [{
   }, {
     path: 'forkJoin',
     component: ForkJoinComponent
+  }, {
+    path: 'merge',
+    component: MergeComponent
+  }, {
+    path: 'mergeAll',
+    component: MergeAllComponent
+  }, {
+    path: 'pairwise',
+    component: PairwiseComponent
+  }, {
+    path: 'race',
+    component: RaceComponent
+  }, {
+    path: 'start-with',
+    component: StartWithComponent
+  }, {
+    path: 'with-latest-from',
+    component: WithLatestFromComponent
+  }, {
+    path: 'zip',
+    component: ZipComponent
   }]
 }];
 
